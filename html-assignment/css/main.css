@@ -1,24 +1,30 @@
 body{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: 18px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: 18px; background-color: beige; color: #EF5926;
 }
 header,footer{
-    background-color: #e0fbfc;
+    background-color: #EF5926;color:#FFFFFF; border-radius: 25px;
 }
 .site-title{
-    color: #ee6c4d;
+    color: #FFFFFF;
 }
 #my-image{
-    box-shadow: 0px 0px 2px 1px black;
+    height:300px; box-shadow: 0px 0px 2px 1px black;
 }
 #myhobbies{
     list-style-type: square;
 }
 #myhobbies>li:nth-child(odd){
-    background-color: #98c1d9;
+    background-color: #EF5926; color: #FFFFFF; border-radius: 25px;width:150px;
 }
 .links{
     list-style-type: none; 
 }
 .links a{
-    text-decoration: none; background-color:#F0B9C2; border:5px solid red;
+    text-decoration: none; color:#EF5926; background-color:beige; border:3px solid red;
+}
+.links a:hover{
+    background-color: #FFFFFF; color:black; border: none; border-radius: 25px;
+}
+.subheading{
+    font-weight: bolder; border-radius: 25px; background-color: #FFFFFF; 
 }
