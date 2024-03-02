@@ -83,3 +83,25 @@ border-right: none;
 #recipe ol li{
     list-style: decimal;
 }
+
+/* styling the forms section */
+form{
+    margin: 30px; margin-top: 10px;
+    padding: 10px;
+    border: 2px black outset;
+}
+.label{
+    display: block;
+    padding: 10px;
+}
+form h3,.select{
+    padding: 10px;
+}
+input[id="yourname"],input[id="email"],textarea{
+    padding: 10px;
+}
+button{
+    display: block;
+    padding: 10px;
+    margin: 10px;
+}
