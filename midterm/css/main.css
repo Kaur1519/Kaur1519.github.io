@@ -1,5 +1,6 @@
 html{
     box-sizing: border-box;
+    font-size: 18px;
   }
   *,
   *:before,
@@ -9,6 +10,7 @@ html{
 
 body{
     background-color: grey;
+    font-family: Waryfish, "lionfish; longfin smelt; leopard danio dragonfish," Lost River sucker, mojarra;
     margin: auto;
 }
 
@@ -28,19 +30,21 @@ header img{
 /* position h1 on header image */
 header h1{
     color: white;
+    font-size: 3.5rem;
     position: absolute;
-    top: 200px; left: 1000px;
+    top: 150px; left: 900px; right: 250px;
 }
 
 /* styling links */
 .links a{
     text-decoration: none;
     color: black;
+    font-size: 1.8rem;
 }
 
 .links{
     display: inline-block;
-    width: 275px;
+    width: 280px;
     padding: 10px;
     margin-bottom: 40px;
     border-right: 2px black; border-right-style: outset;
@@ -59,8 +63,14 @@ border-right: none;
     margin-top: 0; padding-top: 0;
     float: left;
 }
+.article-content{
+    font-size: 1rem;
+    line-height: 1.4em;
+    margin-right: 30px;
+}
 .heading{
     margin-left: 30px; margin-bottom: 10px;
+    font-size: 2rem;
 }
 
 /* clear float left property */
@@ -70,18 +80,24 @@ border-right: none;
 
 /* styling fact list */
 #facts ul{
-    margin-left: 50px; margin-bottom:30px ;
+    margin-left: 70px; margin-bottom:30px ;
 }
 #facts ul li{
     list-style: disc;
+    font-size: 1rem;
+    line-height: 1.4em;
+    margin-right: 30px;
 }
 
 /* styling recipe list */
 #recipe ol{
-    margin-left: 50px; margin-bottom:30px ;
+    margin-left: 70px; margin-bottom:30px ;
 }
 #recipe ol li{
     list-style: decimal;
+    font-size: 1rem;
+    line-height: 1.4em;
+    margin-right: 30px;
 }
 
 /* styling the forms section */
@@ -89,6 +105,7 @@ form{
     margin: 30px; margin-top: 10px;
     padding: 10px;
     border: 2px black outset;
+    
 }
 .label{
     display: block;
@@ -97,11 +114,31 @@ form{
 form h3,.select{
     padding: 10px;
 }
-input[id="yourname"],input[id="email"],textarea{
-    padding: 10px;
+input[id="yourname"],input[id="email"]{
+    margin-top: 1px;
+    margin-bottom: 10px;
+    margin-left: 13px;
+    width: 1050px;
+    min-height: 23px;
+    background-color: #f0f0f0
+}
+textarea{
+    margin-top: 1px;
+    margin-bottom: 10px;
+    margin-left: 13px;
+    width: 1050px;
+    min-height: 100px;
+    background-color: #f0f0f0
 }
 button{
     display: block;
     padding: 10px;
     margin: 10px;
+}
+/* styling the footer */
+footer{
+    margin-left: 1050px;
+    padding-top: 5px;
+    padding-bottom: 30px;
+    font-size: 1.5rem;
 }
