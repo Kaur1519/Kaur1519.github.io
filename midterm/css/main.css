@@ -1,0 +1,24 @@
+html{
+    box-sizing: border-box;
+  }
+  *,
+  *:before,
+  *:after{
+    box-sizing: inherit;
+  }
+body{
+    background-color: grey;
+}
+.container{
+    background-color: white;
+    margin-left: 200px;
+    margin-right: 200px ;
+    margin-bottom: 20px;
+    
+}
+header img{
+    width: 800px; height: 400px;
+}
+article img{
+    width: 300px; height: 300px;
+}
