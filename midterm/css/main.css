@@ -6,19 +6,80 @@ html{
   *:after{
     box-sizing: inherit;
   }
+
 body{
     background-color: grey;
+    margin: auto;
 }
+
 .container{
     background-color: white;
-    margin-left: 200px;
-    margin-right: 200px ;
-    margin-bottom: 20px;
+    width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 40px;
     
 }
 header img{
-    width: 800px; height: 400px;
+    position: relative;
+    width: 1200px; height: 450px;
+    margin: 0 auto;
 }
-article img{
-    width: 300px; height: 300px;
+
+/* position h1 on header image */
+header h1{
+    color: white;
+    position: absolute;
+    top: 200px; left: 1000px;
+}
+
+/* styling links */
+.links a{
+    text-decoration: none;
+    color: black;
+}
+
+.links{
+    display: inline-block;
+    width: 275px;
+    padding: 10px;
+    margin-bottom: 40px;
+    border-right: 2px black; border-right-style: outset;
+    text-align: center;
+}
+
+/* remove border fron last link */
+nav ul li:last-child{
+border-right: none;
+}
+
+/* style and float the image to left*/
+.article-image{
+    width: 400px; height: 250px;
+    padding: 20px; margin: 10px;
+    margin-top: 0; padding-top: 0;
+    float: left;
+}
+.heading{
+    margin-left: 30px; margin-bottom: 10px;
+}
+
+/* clear float left property */
+#facts h2{
+    clear: left;
+}
+
+/* styling fact list */
+#facts ul{
+    margin-left: 50px; margin-bottom:30px ;
+}
+#facts ul li{
+    list-style: disc;
+}
+
+/* styling recipe list */
+#recipe ol{
+    margin-left: 50px; margin-bottom:30px ;
+}
+#recipe ol li{
+    list-style: decimal;
 }
