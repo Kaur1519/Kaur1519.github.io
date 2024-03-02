@@ -17,21 +17,21 @@
       <!-- adding links to different parts of web page -->
       <nav>
          <ul>
-             <li><a href="#home">Home</a></li>
-             <li><a href="#facts">Facts</a></li>
-             <li><a href="#recipe">Recipe</a></li>
-             <li><a href="#contact">Contact Us</a></li>
+             <li class="links"><a href="#home">Home</a></li>
+             <li class="links"><a href="#facts">Facts</a></li>
+             <li class="links"><a href="#recipe">Recipe</a></li>
+             <li class="links"><a href="#contact">Contact Us</a></li>
          </ul>
      </nav>
      <!-- adding image of biryani and a paragraph about it -->
-     <article>
-          <h2 id="home">Veg Biryani</h2>
-          <img src="images/biryani_image.jpg" alt="image of biryani">
+     <article id="home">
+          <h2 class="heading">Veg Biryani</h2>
+          <img src="images/biryani_image.jpg" alt="image of biryani" class="article-image">
           <p>Biryani is a delicious rice dish peppered with scrumptious spices like saffron and cumin and further layered with spiced meat or veggie protein. Typically, this layered rice dish is enriched with added yogurt or ghee, a clarified butter, for an extra boost of luxurious flavor.  While biryani can be made with many different types of rice such as seeraga samba or jeerakasala, long-grain basmati rice is typically the main grain used.The spices within biryani really allow this dish to shine, with garam masala being a simple but great choice to infuse a rainbow of flavor into every bite. Nuts and seeds such as succulent cardamom pods often feature, providing crunchy texture along with fried onions and dried fruit.There are many different ways to cook biryani, though the most common is likely the dum method. This is a slow-cooking technique in which the rice is layered raw. </p>
      </article>
      <!-- facts about biryani -->
      <section id="facts">
-         <h2>Facts about Biryani</h2>
+         <h2 class="heading">Facts about Biryani</h2>
          <ul>
              <li>Biryani is the single most-ordered dish on Indian online food ordering and delivery services.</li>
              <li>The exact origin of the dish is uncertain.</li>
@@ -40,7 +40,7 @@
      </section>
      <!-- recipe section -->
      <section id="recipe">
-         <h2> Recipe of Biryani</h2>
+         <h2 class="heading"> Recipe of Biryani</h2>
          <ol>
              <li>Soak the rice in 3 cups water for 30 minutes. After the rice has soaked, drain the water using a colander.</li>
              <li> Heat a pot full of water, add 3 green cardamom, 2 cloves and 3/4 teaspoon salt to it. Let it come to a boil. Add rice, stir with a spoon.</li>
@@ -53,18 +53,19 @@
      </section>
      <!-- form section to contact for more information -->
      <section id="contact">
-         <h2>Contact to learn more about Indian dishes</h2>
+         <h2 class="heading">Contact to learn more about Indian dishes</h2>
          <form action="index.html" method="post">
-              <label for="yourname">Your Name</label>
+              <label for="yourname">Your Name</label><br>
               <input id="yourname" type="text" name="fullname" placeholder="Full name" required>
-
-              <label for="email">Your Email</label>
+              <br>
+              <label for="email">Your Email</label><br>
               <input id="email" type="email" name="email" required>
-
-              <label for="message">Your Message</label>
+               <br>
+              <label for="message">Your Message</label><br>
               <textarea id="message"></textarea>
-              
+               <br>
               <h3>Do you love cooking?</h3>
+              <br>
               <label for="yes">Yes</label>
               <input type="radio" id="yes" name="yes" value="Yes">
               <label for="no">No</label>
