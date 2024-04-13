@@ -119,8 +119,43 @@ nav{
 .header p{
     font-family: 'open Sans', 'sans-serif';
     font-size: 0.6rem;
-    line-height: 0.8rem;
+    font-weight: 100;
+    line-height: 0.9rem;
     margin: 0.5rem;
     color: #ffffff;
 }
 /* css valid */
+
+/* adding background color, width,height, padding and margin to about Us section */
+.main-section1{
+    background-color: #ffe6ac;  
+    padding: 0.6rem;        
+}
+
+.main-section1-content{
+    width: 100%;
+    height: 396px;
+}
+
+/* styling the image, heading and paragraph inside About Us section */
+.main-section1-content img{
+    width: 100%;
+    height: 220px;
+    margin-top: 0.5rem;
+    margin-bottom: 0.9rem;
+}
+/* styling all main headings in main section */
+.main h2{
+    font-family: 'open Sans', 'sans-serif';
+    font-size: 2rem;
+    font-weight: 750;
+    margin-top: 0.3rem;
+    margin-bottom: 1rem;
+}
+.main p{
+    font-family: 'open Sans', 'sans-serif';
+    font-size: 0.6rem;
+    font-weight: 650;
+    line-height: 0.8rem;
+    margin-top: 0.6rem;
+}
