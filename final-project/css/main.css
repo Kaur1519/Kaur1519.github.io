@@ -1,74 +1,126 @@
 html{
     box-sizing: border-box;
-    font-size: 14px;
+    font-family: 'open Sans', 'sans-serif';
+    font-size: 12px;
   }
   *,
   *:before,
   *:after{
     box-sizing: inherit;
   }
-  /* giving the wigth to whole content and centering it for mobile layout */
-  .wrapper{
+
+
+
+
+/* giving the wigth to whole content and centering it for mobile layout */
+.wrapper{
     width: 450px;
     margin: 0 auto;
-  }
-  /* adding black background color to header section and centering the content*/
-  .header-section1{
+}
+.header{
+    height: 715px;
+}
+/* adding black background color to header section and centering the content*/
+.header-section1{
     background-color: #222;
-    padding: 10px;
+    padding: 9px;
     text-align: center;
-    height: 310px;
-  }
-  /* adding width and height to header-section1-content div to layout the content inside it*/
-  .header-section1-content{
+    height: 330px;
+}
+
+/* adding width and height to header-section1-content div to layout the content inside it*/
+.header-section1-content{
     width: 100%;
     height: 100%;
-  }
-  /*laying out the logo by giving width and background color to logo container and positioning the logo */
-  .logo{
+}
+
+/*laying out the logo by giving width and background color to logo container and positioning the logo */
+.logo{
     background-color:#c78c06;
     position: relative;
     width: 100%;
     height:125px
-  }
-  .logo img{
+}
+.logo img{
    position: absolute;
    left: 0px;
-  }
-  /* styling the links by adding color and margin */
-  .nav-links a{
+}
+
+/* styling the links by adding color and margin */
+.nav-links a{
     text-decoration: none;
     color: #c78c06;
-  }
-  .nav-links{
-    margin: 20px;
-  }
-  nav{
+}
+.nav-links{
+    margin: 25px;
+}
+nav{
     position: relative;
-    bottom: 50px;
-  }
-  .nav-links:nth-child(1) a{
+    bottom: 43px;
+}
+.nav-links:nth-child(1) a{
     color: #222;
-  }
-  /* positioning and styling the search icon and search bar */
-  .search{
+}
+/* add size and font family for navigation */
+.header-section1-content nav{
+    font-family: 'open Sans', 'sans-serif';
+    font-size: 0.7rem;
+    font-weight: 600;
+}
+
+/* positing and styling the search icon and search bar */
+.search{
     position: relative;
-    bottom: 60px;
-  }
-  .search input{
-    width: 403px;
+    bottom: 45px;
+}
+.search input{
+    width: 406px;
     height: 26px;
     position: absolute;
     top: 0cm;
     left: 0cm;
-
-  }
-  .fa-magnifying-glass{
+}
+.fa-magnifying-glass{
     color: #c78c06;
     border: 1px #c78c06 solid;
     height: 26px; width: 27px;
     position: absolute;
     top: 0cm;
     right: 0cm;
-  }
+}
+/* css valid */
+
+ /* adding background image and width and height to header-section2 */
+.header-section2{
+    height: 394px;
+    background-image: url(../images/header-section2-backgound.jpg);
+    background-size: 450px 394px;
+    position: relative;
+}
+.header-section2-content{
+    background-color: rgb(34, 34, 34, 0.7);
+    width: 100%;
+    height: 75%;
+    margin: 0 auto;
+    position: absolute;
+    top: 50px;   
+}
+
+/* adding font size, family, weight margin and line hight to the heading and paragraph of header section 2 */
+.header-section2-content h1{ 
+    font-family: 'open Sans', 'sans-serif';
+    font-size: 2.9rem;
+    font-weight: 674;
+    line-height: 4rem;
+    margin-left: 0.6rem;
+    margin-top: 2rem;
+    color: #ffffff; 
+}
+.header p{
+    font-family: 'open Sans', 'sans-serif';
+    font-size: 0.6rem;
+    line-height: 0.8rem;
+    margin: 0.5rem;
+    color: #ffffff;
+}
 /* css valid */
