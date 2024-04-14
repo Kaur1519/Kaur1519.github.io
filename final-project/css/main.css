@@ -11,14 +11,17 @@ html{
 
 
 
-
+.welcome{ 
+    width: 469px;
+    margin: 0 auto;
+}
 /* giving the wigth to whole content and centering it for mobile layout */
 .wrapper{
-    width: 450px;
-    margin: 0 auto;
+    width: 100%;
 }
 .header{
     height: 715px;
+    margin: 0.5rem;
 }
 /* adding black background color to header section and centering the content*/
 .header-section1{
@@ -42,6 +45,7 @@ html{
     height:125px
 }
 .logo img{
+    height: 75px;
    position: absolute;
    left: 0px;
 }
@@ -74,7 +78,7 @@ nav{
     bottom: 45px;
 }
 .search input{
-    width: 406px;
+    width: 409px;
     height: 26px;
     position: absolute;
     top: 0cm;
@@ -94,7 +98,8 @@ nav{
 .header-section2{
     height: 394px;
     background-image: url(../images/header-section2-backgound.jpg);
-    background-size: 450px 394px;
+    background-size: cover;
+    background-position: center;
     position: relative;
 }
 .header-section2-content{
@@ -126,10 +131,15 @@ nav{
 }
 /* css valid */
 
+.main{
+    width: 100%; 
+}
 /* adding background color, width,height, padding and margin to about Us section */
 .main-section1{
     background-color: #ffe6ac;  
-    padding: 0.6rem;        
+    padding: 0.5rem;     
+    margin: 0.5rem; 
+    padding-top: 0.2rem;  
 }
 
 .main-section1-content{
@@ -152,10 +162,203 @@ nav{
     margin-top: 0.3rem;
     margin-bottom: 1rem;
 }
-.main p{
+
+/* styling paragraph in about us section section */
+.main-section1-content p{
     font-family: 'open Sans', 'sans-serif';
     font-size: 0.6rem;
-    font-weight: 650;
-    line-height: 0.8rem;
+    font-weight: 671;
+    line-height: 0.9rem;
     margin-top: 0.6rem;
 }
+
+/* adding width, margina and padding to main section 2  amd main section2 content */
+.main-section2{
+    margin: 0.5rem;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+
+}
+.main-section2-content{
+    width: 100%;
+    padding-top: 1.3rem;
+}
+
+/* styling the h3(sub heading) inside main section 2 */
+.main-section2 h3, .main-section3 h3{
+  font-family: 'open Sans', 'sans-serif';
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-left: 0.4rem;
+  margin-top: 1.3rem;
+  margin-bottom: 0.8rem;
+}
+
+/* styling the paragraghs inside main section 2 */
+.main-section2 p, .main-section3 p{
+    font-family: 'open Sans', 'sans-serif';
+    font-size: 0.6rem;
+    font-weight: 660;
+    line-height: 0.8rem;
+    margin-left: 0.4rem;
+}
+
+/* styling all the service boxes inside main section 2 */
+.digital-transformation, .marketing, .video-production, .web-development, .print{
+    width: 100%;
+    background-color: #ffe6ac;
+    margin-bottom: 0.5rem;
+}
+.main-section2-content img{
+    width: 100%;
+}
+
+/* styling all the buttons */
+.button{
+  font-family: 'open Sans', 'sans-serif';
+  font-size: 0.9rem; 
+  font-weight: 500;
+  padding: 1.2rem;
+  border: none;
+  margin: 0.5rem;
+}
+/* adding background color and color to button in header-section2 */
+.one{
+    background-color: #c78c06;
+  color: #222;
+}
+/* adding color to the buttons in our services section */
+.two, .three ,.four, .five, .six{
+    background-color: #222;
+    color: #ffffff;
+}
+/* adding space between button content and icon */
+.button .fa-play{
+    margin-left: 0.5rem;
+}
+/* css valid */
+
+.main-section3{
+    width: 100%;
+    padding: 0.3rem;
+    background-image: url(../images/vision.jpg);
+    background-size: cover;
+    background-position: center;
+    
+}
+.main-section3-content{
+    width: 100%;
+}
+.main-section3 h3{
+    color: #ffffff;
+    padding-bottom: 0.2rem;
+}
+.main-section3 p{
+    color: rgb(255, 255, 255, 0.7);
+} 
+.seven{
+    background-color: rgba(3, 18, 39, 0.8);
+    color: #ffffff;
+    border: #c78c06 solid 1px;
+}
+.main-section4{
+    margin: 0.5rem;
+}
+.main-section4-content{
+    width: 100%;
+    padding-top: 0.6rem;
+}
+.john img, .bob img{
+    width: 100%;
+}
+.john h3, .bob h3{
+font-family: 'open Sans', 'sans-serif';
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin: 0.4rem;
+}
+.john h4, .bob h4{
+    font-family: 'open Sans', 'sans-serif';
+      font-size: 0.7rem;
+      font-weight: 700;
+      margin: 0.4rem;
+}
+.john p, .bob p{
+    font-family: 'open Sans', 'sans-serif';
+    font-size: 0.6rem;
+    font-weight: 600;
+    margin: 0.4rem;
+    line-height: 0.8rem;
+    padding-bottom: 0.9rem;
+}
+hr{
+    margin: 0.4rem;
+    background: #c78c06;
+    height: 2px;
+    border: none;
+}
+.john, .bob{
+    width: 100%;
+    background-color: #ffe6ac;
+    margin-bottom: 0.5rem;
+    
+}
+.main-section5{
+    margin: 0.5rem;
+}
+.main-section5-content{
+    width: 100%;
+    padding-top: 0.6rem;
+}
+.message h3, .hours h3, .location h3{
+    font-family: 'open Sans', 'sans-serif';
+      font-size: 1.4rem;
+      font-weight: 700;
+}
+.message, .hours, .location{
+    width: 100%;
+    margin-bottom: 1.2rem;
+} 
+.message form{
+    margin-top: 0.7rem;
+}
+#name, #email{
+    margin-top: 0.2rem;
+    margin-bottom: 0.5rem;
+    width: 100%;
+    min-height: 23px;
+}
+textarea{
+    margin-top: 0.2rem;
+    margin-bottom: 0.8rem;
+    width: 100%;
+    min-height: 100px;
+}
+button[type="submit"]{
+    background-color: #222;
+    color: #c78c06;
+}
+.hours th, .hours td{
+    margin-top: 0.6rem;
+    border: 1px solid;
+    height: 2.3rem;
+    vertical-align: middle;
+    padding-left: 0.7rem;
+}
+.hours table{
+    width: 100%;
+    margin-top: 0.7rem;
+}
+.hours th{
+    background-color: #ffe6ac;
+}
+.location{
+    width: 100%;
+}
+#map{
+    margin-top: 0.7rem;
+    width: 100%;
+    height: 18rem;
+}
+/* css valid */
+.footer
