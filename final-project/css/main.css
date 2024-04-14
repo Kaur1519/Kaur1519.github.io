@@ -9,58 +9,52 @@ html{
     box-sizing: inherit;
   }
 
-
-
+  /* laying out the welcome container to style the for mobile */
 .welcome{ 
-    width: 469px;
+    width: 475px;
     margin: 0 auto;
 }
-/* giving the wigth to whole content and centering it for mobile layout */
+
+/* laying out the wrapper container to style the header, main and footerinside it */
 .wrapper{
     width: 100%;
 }
+/* creting a container for header section1 and header section2*/
 .header{
     height: 715px;
-    margin: 0.5rem;
 }
 /* adding black background color to header section and centering the content*/
 .header-section1{
     background-color: #222;
+    margin: 0.5rem;
+    margin-bottom: 0;
     padding: 9px;
     text-align: center;
     height: 330px;
 }
-
-/* adding width and height to header-section1-content div to layout the content inside it*/
-.header-section1-content{
-    width: 100%;
-    height: 100%;
-}
-
-/*laying out the logo by giving width and background color to logo container and positioning the logo */
+/*laying out the logo by giving width and background color to logo container and positing the logo */
 .logo{
     background-color:#c78c06;
     position: relative;
-    width: 100%;
     height:125px
 }
 .logo img{
-    height: 75px;
+    height: 70px;
    position: absolute;
    left: 0px;
 }
-
 /* styling the links by adding color and margin */
 .nav-links a{
     text-decoration: none;
-    color: #c78c06;
+    color: rgb(199, 140, 6, 0.8);
 }
 .nav-links{
-    margin: 25px;
+    margin-top: 28px;
+    margin-bottom: 10px;
 }
 nav{
     position: relative;
-    bottom: 43px;
+    bottom: 50px;
 }
 .nav-links:nth-child(1) a{
     color: #222;
@@ -69,9 +63,8 @@ nav{
 .header-section1-content nav{
     font-family: 'open Sans', 'sans-serif';
     font-size: 0.7rem;
-    font-weight: 600;
+    font-weight: 500;
 }
-
 /* positing and styling the search icon and search bar */
 .search{
     position: relative;
@@ -81,13 +74,14 @@ nav{
     width: 409px;
     height: 26px;
     position: absolute;
-    top: 0cm;
-    left: 0cm;
+    top: 0;
+    left: 0;
 }
 .fa-magnifying-glass{
     color: #c78c06;
     border: 1px #c78c06 solid;
-    height: 26px; width: 27px;
+    height: 26px; 
+    width: 27px;
     position: absolute;
     top: 0cm;
     right: 0cm;
@@ -97,20 +91,20 @@ nav{
  /* adding background image and width and height to header-section2 */
 .header-section2{
     height: 394px;
+    margin: 0.5rem;
+    margin-bottom: 0;
+    margin-top: 0;
     background-image: url(../images/header-section2-backgound.jpg);
     background-size: cover;
     background-position: center;
     position: relative;
 }
+/* adding transparent black background to header section2 content and positing it*/
 .header-section2-content{
     background-color: rgb(34, 34, 34, 0.7);
-    width: 100%;
-    height: 75%;
-    margin: 0 auto;
     position: absolute;
     top: 50px;   
 }
-
 /* adding font size, family, weight margin and line hight to the heading and paragraph of header section 2 */
 .header-section2-content h1{ 
     font-family: 'open Sans', 'sans-serif';
@@ -131,88 +125,81 @@ nav{
 }
 /* css valid */
 
+/* creating a container to layout about us, our services, our visio, our team and contact section */
 .main{
-    width: 100%; 
+    width: 100%;
 }
 /* adding background color, width,height, padding and margin to about Us section */
 .main-section1{
-    background-color: #ffe6ac;  
-    padding: 0.5rem;     
-    margin: 0.5rem; 
-    padding-top: 0.2rem;  
+    background-color: #ffe6ac; 
+    margin: 0.5rem ; 
+    margin-top: 0;  
 }
-
 .main-section1-content{
     width: 100%;
-    height: 396px;
+    padding: 0.5rem;
+    padding-top: 1.2rem;
 }
-
-/* styling the image, heading and paragraph inside About Us section */
+/* styling the image
+inside About Us section */
 .main-section1-content img{
     width: 100%;
     height: 220px;
-    margin-top: 0.5rem;
-    margin-bottom: 0.9rem;
+    margin: 0 auto;
 }
-/* styling all main headings in main section */
+/* styling all main headings(h2) in main section */
 .main h2{
     font-family: 'open Sans', 'sans-serif';
     font-size: 2rem;
-    font-weight: 750;
-    margin-top: 0.3rem;
-    margin-bottom: 1rem;
+    font-weight: 740;
+    margin-top: 1rem;
+    margin-bottom: 0.8rem;
 }
-
-/* styling paragraph in about us section section */
-.main-section1-content p{
+/* styling all the paragraphs in main section */
+.main p{
     font-family: 'open Sans', 'sans-serif';
     font-size: 0.6rem;
-    font-weight: 671;
-    line-height: 0.9rem;
+    font-weight: 672;
+    line-height: 0.8rem;
     margin-top: 0.6rem;
+    margin-bottom: 0.6rem;
 }
+/* css valid */
 
 /* adding width, margina and padding to main section 2  amd main section2 content */
 .main-section2{
     margin: 0.5rem;
-    padding-top: 0.3rem;
     padding-bottom: 0.3rem;
-
 }
 .main-section2-content{
     width: 100%;
-    padding-top: 1.3rem;
+    padding-top: 1rem;
 }
-
 /* styling the h3(sub heading) inside main section 2 */
-.main-section2 h3, .main-section3 h3{
+.main-section2 h3{
   font-family: 'open Sans', 'sans-serif';
   font-size: 1.4rem;
-  font-weight: 700;
+  font-weight: 750;
   margin-left: 0.4rem;
   margin-top: 1.3rem;
   margin-bottom: 0.8rem;
 }
-
-/* styling the paragraghs inside main section 2 */
-.main-section2 p, .main-section3 p{
-    font-family: 'open Sans', 'sans-serif';
-    font-size: 0.6rem;
-    font-weight: 660;
-    line-height: 0.8rem;
+/* adding margin to paragraps in main section 2 */
+.main-section2 p{
     margin-left: 0.4rem;
+    margin-bottom: 0.1rem;
 }
-
 /* styling all the service boxes inside main section 2 */
 .digital-transformation, .marketing, .video-production, .web-development, .print{
     width: 100%;
     background-color: #ffe6ac;
     margin-bottom: 0.5rem;
 }
+/* styling all the images in service boxes */
 .main-section2-content img{
     width: 100%;
+    height: 290px;
 }
-
 /* styling all the buttons */
 .button{
   font-family: 'open Sans', 'sans-serif';
@@ -228,39 +215,55 @@ nav{
   color: #222;
 }
 /* adding color to the buttons in our services section */
-.two, .three ,.four, .five, .six{
+.two, .three ,.four, .five, .six, .seven{
     background-color: #222;
-    color: #ffffff;
+    color: rgb(255, 255, 255, 0.8);
 }
 /* adding space between button content and icon */
 .button .fa-play{
     margin-left: 0.5rem;
+    color: #ffffff;
 }
 /* css valid */
 
+/* adding background image to and padding to our vision section*/
 .main-section3{
     width: 100%;
-    padding: 0.3rem;
+    height: 190px;
+    padding: 0.4rem;
     background-image: url(../images/vision.jpg);
     background-size: cover;
     background-position: center;
-    
+    background-repeat: no-repeat;
 }
+/* creating a container to layout the heading, paragraph and button */
 .main-section3-content{
     width: 100%;
+    height: 190px;
 }
-.main-section3 h3{
+/* styling the heading, paragraph and button of our vision section */
+.main-section3 h4{
     color: #ffffff;
+    font-family: 'open Sans', 'sans-serif';
+    font-size: 1.2rem;
+    font-weight: 750;
+    margin-left: 0.3rem;
+    margin-top: 1.3rem;
+    margin-bottom: 0.8rem;
     padding-bottom: 0.2rem;
 }
 .main-section3 p{
-    color: rgb(255, 255, 255, 0.7);
+    color: rgb(255, 255, 255, 0.8);
+    margin-left: 0.3rem;
 } 
+/*  styling the button inside our vision */
 .seven{
     background-color: rgba(3, 18, 39, 0.8);
-    color: #ffffff;
     border: #c78c06 solid 1px;
 }
+/* css valid */
+
+/* creating a container outside the content of our team section to layout john and bob */
 .main-section4{
     margin: 0.5rem;
 }
@@ -268,41 +271,45 @@ nav{
     width: 100%;
     padding-top: 0.6rem;
 }
+/* styling the images inside the team section */
 .john img, .bob img{
     width: 100%;
 }
-.john h3, .bob h3{
+/* styling the heading, subheadin and paragraph in john and bob */
+.john h5, .bob h5{
 font-family: 'open Sans', 'sans-serif';
   font-size: 1.4rem;
   font-weight: 700;
   margin: 0.4rem;
 }
-.john h4, .bob h4{
+.john h6, .bob h6{
     font-family: 'open Sans', 'sans-serif';
       font-size: 0.7rem;
-      font-weight: 700;
+      font-weight: 740;
       margin: 0.4rem;
 }
 .john p, .bob p{
     font-family: 'open Sans', 'sans-serif';
     font-size: 0.6rem;
-    font-weight: 600;
+    font-weight: 650;
     margin: 0.4rem;
     line-height: 0.8rem;
     padding-bottom: 0.9rem;
 }
+/* styling the horizontal line inside the jon and bob section */
 hr{
     margin: 0.4rem;
     background: #c78c06;
-    height: 2px;
+    height: 1.5px;
     border: none;
 }
+/* adding backgound color to john and bob section */
 .john, .bob{
     width: 100%;
     background-color: #ffe6ac;
     margin-bottom: 0.5rem;
-    
 }
+/* adding margin, width and padding to main-section5  and main-section5 -content container */
 .main-section5{
     margin: 0.5rem;
 }
@@ -310,10 +317,11 @@ hr{
     width: 100%;
     padding-top: 0.6rem;
 }
-.message h3, .hours h3, .location h3{
+/* styling the sub headings in contact us section */
+.message h7, .hours h7, .location h7{
     font-family: 'open Sans', 'sans-serif';
       font-size: 1.4rem;
-      font-weight: 700;
+      font-weight: 780;
 }
 .message, .hours, .location{
     width: 100%;
@@ -322,6 +330,7 @@ hr{
 .message form{
     margin-top: 0.7rem;
 }
+/* styling the forms in contact section */
 #name, #email{
     margin-top: 0.2rem;
     margin-bottom: 0.5rem;
@@ -334,16 +343,22 @@ textarea{
     width: 100%;
     min-height: 100px;
 }
+/* styling the button in form */
 button[type="submit"]{
     background-color: #222;
     color: #c78c06;
 }
+/* styling the table
+by adding border, height, margin , padding, color and align in middle to table cells */
 .hours th, .hours td{
     margin-top: 0.6rem;
     border: 1px solid;
     height: 2.3rem;
     vertical-align: middle;
-    padding-left: 0.7rem;
+    padding-left: 0.7rem;  
+    font-family: 'open Sands', 'sans-serif';
+    font-size: 0.6rem;
+    font-weight: 900;
 }
 .hours table{
     width: 100%;
@@ -355,10 +370,27 @@ button[type="submit"]{
 .location{
     width: 100%;
 }
+/* styling the map */
 #map{
     margin-top: 0.7rem;
     width: 100%;
     height: 18rem;
 }
 /* css valid */
-.footer
+
+/* laying out the footer of the page */
+.footer{
+    width: 100%; 
+    background-color: #222;  
+    color: rgb(199, 140, 6, 0.8);
+}
+/* adding background color, width,height, padding and margin to about Us section */
+.footer-content{
+    font-family: 'open Sans', 'sans-serif';
+    font-size: 0.6rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+    padding-left: 0.5rem;
+    padding-top: 0.7rem;   
+    padding-bottom: 0.3rem;
+}
