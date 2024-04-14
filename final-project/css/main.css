@@ -224,6 +224,9 @@ inside About Us section */
     margin-left: 0.5rem;
     color: #ffffff;
 }
+.one .fa-play{
+    color: #222;
+}
 /* css valid */
 
 /* adding background image to and padding to our vision section*/
@@ -329,6 +332,9 @@ hr{
 } 
 .message form{
     margin-top: 0.7rem;
+    font-family: 'open Sands', 'sans-serif';
+    font-size: 0.7rem;
+    font-weight: 530;
 }
 /* styling the forms in contact section */
 #name, #email{
