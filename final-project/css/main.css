@@ -473,10 +473,17 @@ by adding border, height, margin , padding, color and align in middle to table c
     line-height: 1rem;
     }
     .main-section1-content img{
+        width: 400px;
         float: left;
+        padding-right: 20px;
+    }
+    .main-section1{
+        height: 250px;
+        padding-left: 100px;
+        padding-right: 100px;
     }
     .main-section2-content h2{
-        margin: 0;
+        margin-left: 0;
         padding: 0;
         grid-area: heading;
     }
@@ -574,7 +581,50 @@ by adding border, height, margin , padding, color and align in middle to table c
         margin-top: 0;
     }
     /* css valid */
+    /* centering the content of our contact us */
+    .main-section5{
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    .main-section5-content h2{
+        width: 100%;
+    }
     
-   
+    .message, .location{
+        width: 45%;
+    } 
+    .hours th, .hours td{
+        height: 3.5rem;
+        font-size: 0.8rem;
+        font-weight: 600;
+    }
+    /* using flex property to position the message, hours and location container within the contact us container */
+    .main-section5-content{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .main-section5-content > h2{
+        order: -2;
+    }
+    .main-section5-content > .message{
+        order: -1;
+    }
+    .main-section5-content >.location{
+        order: 0;
+    }
+   .main-section5-content >.hours{
+        order: 1;
+    }
+    /* css valid */
+    /* centering the content of our footer */
+    .footer-content{
+        width:80%;
+        margin: auto;
+    }
+    .message form{
+        font-size: 0.8rem;
+        font-weight: 600;
+    }
 }
 
