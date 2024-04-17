@@ -11,7 +11,7 @@ html{
 
   /* laying out the welcome container to style the for mobile */
 .welcome{ 
-    width: 475px;
+    width: 483px;
     margin: 0 auto;
 }
 
@@ -21,21 +21,22 @@ html{
 }
 /* creting a container for header section1 and header section2*/
 .header{
-    height: 715px;
+   width: 100%;
 }
 /* adding black background color to header section and centering the content*/
 .header-section1{
     background-color: #222;
-    margin: 0.5rem;
-    margin-bottom: 0;
     padding: 9px;
+    padding-bottom: 0;
     text-align: center;
-    height: 330px;
+}
+.header-section1-content{
+    width: 100%;
+    position: relative;
 }
 /*laying out the logo by giving width and background color to logo container and positing the logo */
 .logo{
     background-color:#c78c06;
-    position: relative;
     height:125px
 }
 .logo img{
@@ -49,14 +50,14 @@ html{
     color: rgb(199, 140, 6, 0.8);
 }
 .nav-links{
-    margin-top: 28px;
-    margin-bottom: 10px;
+    margin-top: 30px;
 }
 nav{
     position: relative;
-    bottom: 50px;
+    bottom: 57px;
 }
 .nav-links:nth-child(1) a{
+    background-color:#c78c06;
     color: #222;
 }
 /* add size and font family for navigation */
@@ -66,12 +67,13 @@ nav{
     font-weight: 500;
 }
 /* positing and styling the search icon and search bar */
-.search{
+.search{   
+    bottom: 37px;
     position: relative;
-    bottom: 45px;
+
 }
 .search input{
-    width: 409px;
+    width: 440px;
     height: 26px;
     position: absolute;
     top: 0;
@@ -91,9 +93,6 @@ nav{
  /* adding background image and width and height to header-section2 */
 .header-section2{
     height: 394px;
-    margin: 0.5rem;
-    margin-bottom: 0;
-    margin-top: 0;
     background-image: url(../images/header-section2-backgound.jpg);
     background-size: cover;
     background-position: center;
@@ -132,8 +131,6 @@ nav{
 /* adding background color, width,height, padding and margin to about Us section */
 .main-section1{
     background-color: #ffe6ac; 
-    margin: 0.5rem ; 
-    margin-top: 0;  
 }
 .main-section1-content{
     width: 100%;
@@ -401,3 +398,183 @@ by adding border, height, margin , padding, color and align in middle to table c
     padding-bottom: 0.3rem;
 }
 /* css valid */
+
+/* desktop layout */
+@media screen and (min-width: 760px) {
+    /* incresing the size of container for desktop */
+    .welcome{
+        width: 1200px;
+    }
+    /* laying out the logo, navigation and search for desktop */
+    .header-section1{
+        padding: 35px;
+    }
+    .header-section1-content{
+        position: relative;
+    }
+    .logo{
+        height: 70px;
+        width: 70px;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        left: 5rem;
+        position: relative;
+    }
+    .logo img{
+        height: 80px;
+    }
+    nav{
+       margin: 0;
+        padding: 0;
+        position: absolute;
+        top: 0.5px;   
+    }
+    .nav-links{
+        display: inline-block;
+        padding-left: 2rem;
+        font-size: 1.5rem;
+        
+    }
+    .nav-links:nth-child(1){
+        margin-left: 190px;
+    }
+    .search{
+        width: 226px; 
+        position: absolute;
+        bottom: 40px;
+        right: 50px;
+    }
+    .search input{
+        width: 200px;
+    }
+    /* css valid */
+    /* increasing the height of backgrond image */
+    .header-section2{
+        height: 600px;
+    }
+    /* centering the black background container */
+    .header-section2-content{
+        width: 1000px;
+        height: 400px;
+        margin-left: 100px;
+        margin-top: 50px;
+        padding-top: 50px;
+    }
+    /* incearsing the size and weight of heading and paragraph */
+    .header h1{
+        font-size: 4.5rem;
+        font-weight: 600;
+        line-height: 6rem;
+    }
+    .header p{
+    font-size: 0.7rem;
+    font-weight: 100;
+    line-height: 1rem;
+    }
+    .main-section1-content img{
+        float: left;
+    }
+    .main-section2-content h2{
+        margin: 0;
+        padding: 0;
+        grid-area: heading;
+    }
+    /* styling the our services boxes using the grid property */
+    /* giving name to the elements of grid */
+    .digital-transformation{
+        grid-area: digital;
+    }
+    .marketing{
+        grid-area: marketing;
+    }
+    .video-production{
+        grid-area: video;
+    }
+    .web-development{
+        grid-area: web;
+    }
+    .print{
+        grid-area: print;
+    }
+    .main-section2{
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    .main-section2-content{
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-areas: 
+       "heading heading . . . ."
+        "digital digital digital marketing marketing marketing"
+        "digital digital digital marketing marketing marketing"
+        "digital digital digital marketing marketing marketing"
+        "digital digital digital marketing marketing marketing"
+        "digital digital digital marketing marketing marketing"
+        "digital digital digital marketing marketing marketing"
+        "digital digital digital marketing marketing marketing"
+        "digital digital digital marketing marketing marketing"
+        "digital digital digital marketing marketing marketing"
+        "digital digital digital marketing marketing marketing"
+        "video video web web print print"
+        "video video web web print print"
+        "video video web web print print"
+        "video video web web print print"
+        "video video web web print print"
+        "video video web web print print"
+        "video video web web print print"
+        "video video web web print print"
+        ;
+        grid-gap: 10px;
+        grid-row-gap: 5px;
+        justify-self: center;
+        align-self: center;
+    }
+    /* increasing the size of the font and line height */
+    .main p{
+        font-size: 0.7rem;
+        font-weight: 600;
+        line-height: 1rem;
+    }
+    /* css valid */
+    /* centering the content of our vision */
+    .main-section3{
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+    /* laying out our team container */
+    .main-section4{
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+  
+    .john{
+        height: 328px;
+        margin-bottom: 0cm;
+        padding-bottom: 0cm;
+    }
+    .bob{
+        height: 328px;
+        margin-top: 0cm;
+        margin-top: 0cm;
+        padding-top: 0cm;
+    }  
+    /* decreasing the size of our team members image */
+    .john img{
+        width: 502px;
+        padding-right: 10px;
+        float: left;
+    }
+    .bob img{
+        width:502px;
+        padding-left: 10px;
+        float: right;
+    }
+    .bob h5{
+        margin-top: 0;
+    }
+    /* css valid */
+    
+   
+}
+
