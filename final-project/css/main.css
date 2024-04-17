@@ -318,7 +318,7 @@ hr{
     padding-top: 0.6rem;
 }
 /* styling the sub headings in contact us section */
-.message h7, .hours h7, .location h7{
+.message h6, .hours h6, .location h6{
     font-family: 'open Sans', 'sans-serif';
       font-size: 1.4rem;
       font-weight: 780;
@@ -627,4 +627,4 @@ by adding border, height, margin , padding, color and align in middle to table c
         font-weight: 600;
     }
 }
-
+/* css valid */
